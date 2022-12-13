@@ -1,0 +1,190 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.1;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  article {
+  display: flex;
+  flex-direction: column;
+  max-width: 34rem;
+  width: 100%;
+  margin: 2rem 1.25rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.product {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2.2rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-size: 3.2rem;
+  padding-bottom: 1.5rem;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+span {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 3.2rem;
+  position: relative;
+}
+
+span::after {
+  content: "$169.99";
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: start;
+  text-decoration: line-through;
+  position: absolute;
+  right: 10.5rem;
+  top: 1rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: hsl(158, 36%, 37%);
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(158, 59%, 17%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.button_icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+
+@media (min-width: 600px) {
+  article{
+    max-width: 80rem;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    
+  }
+
+  img{
+    content: url(./images/image-product-desktop.jpg);
+    width: 48%;
+    border-radius: 1.2rem 0 0 1.2rem;
+  
+  }
+  .product{
+   
+    padding: 3.3rem 3rem;
+    border-radius:0 1.2rem 1.2rem 0;
+  
+  }
+
+  header {
+    
+    font-size: 1.7rem;
+   color:hsl(228, 12%, 48%) ;
+    letter-spacing: 0.6rem;
+    margin-bottom: 2rem;
+  }
+  h1{
+    width: 80%;
+  margin-bottom: 2rem;
+    font-size: 4.5rem;
+  }
+  p{
+    font-size: 2rem;
+    width: 92%;
+    margin-bottom: 3rem;
+  }
+  span {  
+    font-size: 4.5rem;
+  }
+  
+  span::after {
+   
+    font-size: 1.6rem;
+    right: 8rem;
+    top: 1.6rem;
+  }
+  .btn,
+.btn:link,
+.btn:visited {
+  width: 90%;
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  margin-top: 3rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(158, 59%, 17%);
+}
+}
