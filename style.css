@@ -135,7 +135,7 @@ span::after {
   }
 
   img{
-    content: url(./images/image-product-desktop.jpg);
+    content: url(image-product-desktop.jpg);
     width: 48%;
     border-radius: 1.2rem 0 0 1.2rem;
   
